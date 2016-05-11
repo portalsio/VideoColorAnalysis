@@ -1,3 +1,4 @@
+//simple class for tracking the colors over time
 class ColorCounter {
   color farbe;
   int count;

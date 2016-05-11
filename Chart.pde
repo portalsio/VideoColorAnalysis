@@ -1,3 +1,4 @@
+//function to draw a pie chart for all tracked colors
 void pieChart(ArrayList<ColorCounter> colorList, float innerRadius, float outerRadius) {
   float totalFactorSum = 0;
   for (int i=0; i<colorList.size(); i++) {
@@ -6,7 +7,6 @@ void pieChart(ArrayList<ColorCounter> colorList, float innerRadius, float outerR
   }
 
 
-  //float[] angles;
   int size = colorList.size();
   float lastAngle = -PI/2.0;
   noStroke();

@@ -1,26 +1,4 @@
-class ColorCounterComparator implements Comparator {
-  int compare(Object o1, Object o2) {
-    float int1 = red(((ColorCounter) o1).farbe);
-    float int2 = red(((ColorCounter) o2).farbe);
-    if (int1!=int2){
-      return (int1<int2) ? -1 : (int1==int2) ? 0 : 1;
-    } 
-    else {
-      int1 = green(((ColorCounter) o1).farbe);
-      int2 = green(((ColorCounter) o2).farbe);
-      if (int1!=int2){
-        return (int1<int2) ? -1 : (int1==int2) ? 0 : 1;
-      } 
-      else {
-        int1 = blue(((ColorCounter) o1).farbe);
-        int2 = blue(((ColorCounter) o2).farbe);
-        return (int1<int2) ? -1 : (int1==int2) ? 0 : 1;
-      }
-    }
-  }
-}
-
-
+//Comparator for the ColorCounter class
 class CountComparator implements Comparator {
   int compare(Object o1, Object o2) {
     double int1 = ((ColorCounter) o1).factor;
